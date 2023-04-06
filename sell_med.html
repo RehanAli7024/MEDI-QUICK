@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style> 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #8beaef, #f1b7eb);
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.navbar{
+            width:85%;
+            margin:auto;
+            padding: 35px 0;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;}
+            .logo{
+                width:100px;
+            height: 50px;
+                cursor:pointer;}
+                .navbar ul li{
+                    list-style: none;
+                    display:inline-block;
+                    margin: 0 20px;
+                    position: relative;
+                }
+    .navbar ul li a{ text-decoration: none;
+        color: rgb(239, 49, 198);
+        text-transform: uppercase;
+    }
+    .navbar ul li::after
+    {content:'';
+    height: 3px;
+    width:0;
+    background: #61e0cf;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8beaef, #f1b7eb);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #f1b7eb;
+}
+ 
+
+ 
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #f1b7eb;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #8beaef,#f1b7eb);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #8beaef,#f1b7eb);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+}
+}
+#extra{margin-bottom: 15px;
+    width: 100%; }
+#extra 
+  input{
+  height: 45px;
+  width: 47%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+#extra input:focus,
+#extra input:valid{
+  border-color: #f1b7eb;
+}
+ 
+#eextra{margin-bottom: 50px;
+    width: 100%;
+  margin-left:50%;
+margin-top: -90px; }
+#eextra 
+  input{
+  height: 45px;
+  width: 47%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+#eextra input:focus,
+#eextra input:valid{
+  border-color: #f1b7eb;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="logo.png" class="logo"> 
+        <ul>
+         <li><a href="index.html">HOME </a></li>
+         <li><a href="aboutus.html">ABOUT US  </a></li>
+         <li><a href="contactus.html">CONTACT US </a></li>
+         
+ 
+ 
+         </ul></div>
+    <div class="title">SELL MEDICINES </div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">NAME</span>
+            <input type="text" placeholder="Enter name of tablet" required>
+          </div>
+          <div class="input-box">
+            <span class="details">COMPANY</span>
+            <input type="text" placeholder="Enter manufacturer name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Specifications and remark</span>
+            <input type="text" placeholder="Specifications & remarks" required>
+          </div>
+          <div class="input-box">
+            <span class="details">CONTACT DETAILS</span>
+            <input type="tel" placeholder="enter your phone number" required>
+          </div>
+         
+         
+        
+        
+        
+        <div class="button" onclick="location.href='partnership.html'">
+          <input type="submit" value="SEND REQUEST ">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(85, 4, 111);
+            border-radius: 30px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover {
+            color: rgb(228, 95, 199)
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>interested</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .section {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #decef1;
+    }
+
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    .content-section {
+        float: left;
+        width: 55%;
+    }
+
+    .image-section {
+        float: right;
+        width: 40%;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-section .title {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .content-section .content h3 {
+        margin-top: 20px;
+        color: #5d5d5d;
+        font-size: 21px;
+    }
+
+    .content-section .content p {
+        margin-top: 10px;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .content-section .content .button {
+        margin-top: 30px;
+    }
+
+    .content-section .content .button a {
+        background-color: #3d3d3d;
+        padding: 12px 40px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    .content-section .content .button a:hover {
+        background-color: #a52a2a;
+        color: #fff;
+    }
+
+    .content-section .social {
+        margin: 40px 40px;
+    }
+
+    .content-section .social i {
+        color: #a52a2a;
+        font-size: 30px;
+        padding: 0px 10px;
+    }
+
+    .content-section .social i:hover {
+        color: #3d3d3d;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        .content-section {
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .image-section {
+            float: none;
+            width: 100%;
+
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .content-section .title {
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .content-section .content .button {
+            text-align: center;
+        }
+
+        .content-section .content .button a {
+            padding: 9px 30px;
+        }
+
+        .content-section .social {
+            text-align: center;
+        }
+
+    }
+
+    li {
+        color: #252424;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    li:before {
+        content: "\2605";
+        color: #a52a2a;
+        margin-right: 7px;
+
+    }
+
+    #cycle1 {
+
+        color: rgb(85, 4, 111);
+        font-size: 22px;
+    }
+</style>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>INFORMATION ABOUT THYROID PROFILE</h1>
+                </div>
+                <div class="content">
+                    <h3> CHARGES- ₹449/-</h3>
+                    <p class="list">
+                    <ul>
+                        <li>SAMPLE TYPE::<span id="cycle1">Blood</span></li>
+                        <li>FASTING REQUIRED:: <span id="cycle1">No</span></li>
+                        <li>TIMINGS::<span id="cycle1">10AM-6PM</span></li>
+                        <li> PACKAGES INCLUDE::<span id="cycle1">Triiodothyronine (T3),
+                                Thyroxine (T4)
+                                , (UTSH)
+                            </span> </li>
+                        <li>DESCRIPTION::<span id="cycle1">The Thyroid Profile Test can help with the diagnosis of a thyroid disorder.</span></li>
+                    </ul>
+                    </p>
+                    <div class="button">
+                        <a href="paymentform.html">BOOK TEST NOW</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="image-section">
+                <img src="test4.png">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
